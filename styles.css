@@ -4,8 +4,12 @@ body {
     margin: 0;
     background-color: black;
     color: white;
-    scroll-behavior: smooth;
     line-height: 1.6;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 25px;
 }
 
 /* Header */
@@ -76,6 +80,15 @@ body {
     align-items: center;
 }
 
+.hero-bottom-img {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 320px;
+    height: auto;
+}
+
 .hero-content {
     display: flex;
     align-items: center;
@@ -120,7 +133,7 @@ body {
 }
 
 .hero-image img {
-    width: 85%;
+    width: 90%;
     height: auto;
     object-fit: contain;
 }
