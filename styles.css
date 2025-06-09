@@ -1,62 +1,193 @@
+/* Global styles */
 body {
+    font-family: "Castoro", serif;
     margin: 0;
-    font-family: 'Helvetica', sans-serif;
-    line-height: 1.6;
+    background-color: black;
+    color: white;
     scroll-behavior: smooth;
-
+    line-height: 1.6;
 }
 
-.castoro-regular {
-    font-family: "Castoro", serif;
-    font-weight: 400;
-    font-style: normal; }
-
-.top-nav {
+/* Header */
+.header {
+    background-color: black;
+    color: white;
     position: fixed;
     top: 0;
-    
-    background-image: url(img/bg.png);
-    background-size: cover;
-
-
     width: 100%;
-    padding: 10px 20px;
+    z-index: 1000;
+}
+
+/* Nav container */
+.nav-wrapper {
     display: flex;
-    justify-content: flex-end;
-    gap: 15px;
-    z-index: 999;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 1.3vw 0px;
+    flex-wrap: wrap;
 }
 
-.top-nav a {
-    color: #333;
-    text-decoration: none;
+/* Logo */
+.logo {
+    font-size: 1.9rem;
     font-weight: bold;
+    text-decoration: none;
+    color: white;
+    white-space: nowrap;
+    transition: color 0.3s ease;
 }
 
+.logo:hover {
+    color: #aaa;
+}
+
+/* Navigation links */
+.links {
+    display: flex;
+    gap: 1.35rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    /* ✅ allows wrapping when space is tight */
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.45rem;
+    white-space: nowrap;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #aaa;
+}
+
+/* Hero section */
 .hero {
     height: 100vh;
+    padding-top: 80px;
+    box-sizing: border-box;
+    background-color: black;
+    font-family: "Castoro", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    background: url("img/bg.png") fixed;
-    background-size: cover;    
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 auto;
+    gap: 1vw;
+}
 
-
-    
+.hero-text {
+    flex: 3;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding-top: 60px;
+    color: white;
+    min-width: 0;
+    padding-bottom: 3vw;
+    padding-left: 3.7vw;
 }
 
-section {
-    padding: 100px 20px;
-    max-width: 800px;
+.hero-text h1 {
+    font-size: 4.7rem;
+    margin: 0 0 0rem;
+}
+
+.hero-text p {
+    font-size: 2.63rem;
+    margin: 0;
+}
+
+.hero-image {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0vw;
+    padding-bottom: 1.8vw;
+
+}
+
+.hero-image img {
+    width: 85%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Main content background */
+.main-content {
+    background: url("data/bg.png") no-repeat center center fixed;
+    background-size: cover;
+    color: black;
+}
+
+/* Individual sections */
+.main-content section {
+    padding: 30px 20px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
+.main-content h2 {
+    font-size: 2.1rem;
+    font-family: "Castoro", serif;
+    margin-bottom: 0rem;
+    color: black;
+}
+
+.main-content h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 0rem;
+}
+
+.main-content p {
+    font-size: 1.25rem;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.8;
+    color: black;
+    margin-bottom: 2.8rem;
+}
+
+
+
+
+/* Footer styles */
 footer {
-    text-align: center;
-    padding: 5px;
-    background-image: url("img/bg.png");
-    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 40px;
+    background-color: black;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.95rem;
+    flex-wrap: wrap;
+    margin-top: -8px;
+}
+
+.footer-left,
+.footer-right {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-right {
+    text-align: right;
 }
