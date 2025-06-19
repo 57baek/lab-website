@@ -1,206 +1,215 @@
-/* Global styles */
-body {
-    font-family: "Castoro", serif;
+/* === Global === */
+:root {
+    --font-heading: "Castoro", serif;
+    --font-body: "Roboto", sans-serif;
+    --max-width: 1300px;
+  }
+  
+  body {
+    font-family: var(--font-heading);
     margin: 0;
     background-color: black;
     color: white;
     line-height: 1.6;
-}
-
-html {
+  }
+  
+  html {
     scroll-behavior: smooth;
-    scroll-padding-top: 25px;
-}
-
-/* Header */
-.header {
-    background-color: black;
-    color: white;
+    scroll-padding-top: 90px;
+  }
+  
+  /* === Header === */
+  .header {
     position: fixed;
     top: 0;
     width: 100%;
+    background-color: black;
+    color: white;
     z-index: 1000;
-}
-
-/* Nav container */
-.nav-wrapper {
+  }
+  
+  .nav-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 1.3vw 0px;
-    flex-wrap: wrap;
-}
-
-/* Logo */
-.logo {
+    padding: 10px 1.5vw;
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+  
+  .logo {
     font-size: 1.9rem;
     font-weight: bold;
-    text-decoration: none;
     color: white;
+    text-decoration: none;
     white-space: nowrap;
-    transition: color 0.3s ease;
-}
-
-.logo:hover {
+    transition: color 0.3s;
+  }
+  
+  .logo:hover {
     color: #aaa;
-}
-
-/* Navigation links */
-.links {
+  }
+  
+  .links {
     display: flex;
-    gap: 1.35rem;
+    gap: 1.5rem;
     list-style: none;
-    padding: 0;
     margin: 0;
-    flex-wrap: wrap;
-    /* ✅ allows wrapping when space is tight */
-}
-
-.link {
+    padding: 0;
+  }
+  
+  .link {
+    font-size: 1.2rem;
     color: white;
     text-decoration: none;
-    font-size: 1.45rem;
     white-space: nowrap;
-    transition: color 0.3s ease;
-}
-
-.link:hover {
+    transition: color 0.3s;
+  }
+  
+  .link:hover {
     color: #aaa;
-}
-
-/* Hero section */
-.hero {
+  }
+  
+  /* === Hero === */
+  .hero {
     height: 100vh;
     padding-top: 80px;
-    box-sizing: border-box;
-    background-color: black;
-    font-family: "Castoro", serif;
     display: flex;
-    justify-content: center;
     align-items: center;
-}
-
-.hero-bottom-img {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 320px;
-    height: auto;
-}
-
-.hero-content {
+    justify-content: center;
+    background-color: black;
+    position: relative;
+  }
+  
+  .hero-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: var(--max-width);
     width: 100%;
-    height: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 auto;
-    gap: 1vw;
-}
-
-.hero-text {
+    padding: 0 2vw;
+    gap: 3vw;
+  }
+  
+  .hero-text {
     flex: 3;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: white;
-    min-width: 0;
-    padding-bottom: 3.3vw;
-    padding-left: 3.7vw;
-}
-
-.hero-text h1 {
-    font-size: 4.7rem;
-    margin: 0 0 0rem;
-}
-
-.hero-text p {
-    font-size: 2.63rem;
+  }
+  
+  .hero-text h1 {
+    font-size: clamp(3rem, 6vw, 5rem);
+    margin: 0 0 1rem;
+  }
+  
+  .hero-text p {
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
     margin: 0;
-}
-
-.hero-image {
+  }
+  
+  .hero-image {
     flex: 2;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 0vw;
-    padding-bottom: 1.8vw;
-
-}
-
-.hero-image img {
-    width: 90%;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
     height: auto;
     object-fit: contain;
-}
-
-/* Main content background */
-.main-content {
-    background: url("data/bg.png") no-repeat center center fixed;
+  }
+  
+  .hero-bottom-img {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: auto;
+  }
+  
+  /* === Main Content === */
+  .main-content {
+    background: url("assets/background.png") no-repeat center center fixed;
     background-size: cover;
     color: black;
-}
-
-/* Individual sections */
-.main-content section {
-    padding: 30px 20px;
-    max-width: 1300px;
+  }
+  
+  .main-content section {
+    max-width: var(--max-width);
+    padding: 60px 20px;
     margin: 0 auto;
-}
-
-.main-content h2 {
-    font-size: 2.1rem;
-    font-family: "Castoro", serif;
-    margin-bottom: 0rem;
-    color: black;
-}
-
-.main-content h3 {
-    font-family: "Roboto", sans-serif;
+  }
+  
+  .main-content h2 {
+    font-family: var(--font-heading);
+    font-size: 2.3rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .main-content h3 {
+    font-family: var(--font-body);
+    font-size: 1.6rem;
     font-weight: 700;
-    font-size: 1.5rem;
-    margin-bottom: 0rem;
-}
-
-.main-content p {
-    font-size: 1.25rem;
-    font-family: "Roboto", sans-serif;
-    line-height: 1.8;
-    color: black;
     margin-bottom: 1rem;
-}
-
-
-
-
-/* Footer styles */
-footer {
+  }
+  
+  .main-content p {
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+  }
+  
+  /* === Reusable Entry Blocks === */
+  .entry,
+  .team-group {
+    margin-bottom: 2.5rem;
+  }
+  
+  .entry-title,
+  .team-role {
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+  }
+  
+  /* === Map === */
+  .map-wrapper {
+    background: url("assets/background.png") no-repeat center center fixed;
+    background-size: cover;
+    padding: 0 20px 40px;
+  }
+  
+  .map-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+  
+  /* === Footer === */
+  footer {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 0px 40px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 12px 40px;
     background-color: black;
     color: white;
-    font-family: "Roboto", sans-serif;
+    font-family: var(--font-body);
     font-size: 0.95rem;
-    flex-wrap: wrap;
-    margin-top: -8px;
-}
-
-.footer-left,
-.footer-right {
+  }
+  
+  .footer-left,
+  .footer-right {
     flex: 1;
     min-width: 200px;
-}
-
-.footer-left {
+  }
+  
+  .footer-left {
     text-align: left;
-}
-
-.footer-right {
+  }
+  
+  .footer-right {
     text-align: right;
-}
+  }
