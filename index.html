@@ -1,168 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spike Lab</title>
-    <link rel="icon" href="assets/favicon.png" />
+        <!-- Browser Title -->
+        <title>Spike Lab</title>
+        <link rel="icon" href="assets/logo.png" />
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Castoro&family=Roboto:wght@400;700&display=swap"
-        rel="stylesheet">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Castoro&family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="styles.css" />
-</head>
+        <!-- Styles -->
+        <link rel="stylesheet" href="styles.css" />
+    </head>
 
-<body>
-    <!-- Header -->
-    <header class="header">
-        <div class="nav-wrapper">
-            <a class="logo" href="#home">Spike Lab</a>
-            <nav>
-                <ul class="links">
-                    <li><a class="link" href="#about">About</a></li>
-                    <li><a class="link" href="#research">Research</a></li>
-                    <li><a class="link" href="#publications">Publications</a></li>
-                    <li><a class="link" href="#team">Team</a></li>
-                    <li><a class="link" href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Hero -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1>Spike Lab</h1>
-                <p>Cleveland Clinic Epilepsy Center</p>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <div class="nav-wrapper">
+                <a class="logo" href="#home">
+                    <img
+                        src="assets/logo.png"
+                        alt="Spike Lab Logo"
+                        class="logo-img"
+                    />
+                    <span>Spike Lab</span>
+                </a>
+                <nav>
+                    <ul class="links">
+                        <li><a class="link" href="#about">About</a></li>
+                        <li><a class="link" href="#research">Research</a></li>
+                        <li>
+                            <a class="link" href="#publications"
+                                >Publications</a
+                            >
+                        </li>
+                        <li><a class="link" href="#team">Team</a></li>
+                        <li><a class="link" href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div class="hero-image">
-                <img src="assets/seizure.gif" alt="Seizure animation" />
+        </header>
+
+        <!-- Hero -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Spike Lab</h1>
+                    <p>Cleveland Clinic Epilepsy Center</p>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/seizure.gif" alt="Seizure animation" />
+                </div>
             </div>
-        </div>
-        <img src="assets/cc_logo.png" class="hero-logo" alt="Cleveland Clinic Logo" />
-    </section>
-
-    <!-- Main Content -->
-    <main class="main-content">
-        <section id="about">
-            <h2>About Us</h2>
-            <p>
-                <a href="https://my.clevelandclinic.org/health/diseases/17636-epilepsy"
-                    style="color: black;"><strong>Epilepsy</strong></a> — it’s something most people have heard of, but
-                few truly understand. Unlike brain-bending topics like quantum
-                mechanics or the federal tax code, epilepsy is intensely real and surprisingly
-                common: over
-                <a href="https://my.clevelandclinic.org/health/diseases/17636-epilepsy#what-is-epilepsy"
-                    style="color: black;"><strong>3.4 million people in the U.S.</strong></a> live with it.
-                That’s roughly <strong>1 in 100 Americans</strong> who will experience it in their lifetime.
-
-
-            </p>
-            <p>
-                <strong>Spike Lab</strong> is a multidisciplinary team of researchers and engineers based at the <a
-                    href="https://my.clevelandclinic.org/departments/neurological/depts/epilepsy"
-                    style="color: black;"><strong>Cleveland
-                        Clinic Epilepsy Center</strong></a>.
-                From signal processing and computational modeling to AI and machine learning (fueled by coffee and
-                GPUs),
-                we build tools to decode neurological activity, analyze epileptic seizure, and simulate the brain’s complex
-                dynamics. By combining deep clinical insight with engineering innovation, we’re designing practical,
-                human-centered solutions for
-                one of medicine’s most complex neurological disorders.
-            </p>
-
+            <img
+                src="assets/cc_logo.png"
+                class="hero-logo"
+                alt="Cleveland Clinic Logo"
+            />
         </section>
 
-        <section id="research">
-            <h2>Our Research</h2>
-            <div class="entry">
-                <h3 class="entry-title">AI-Based Seizure Prediction</h3>
+        <!-- Main Content -->
+        <main class="main-content">
+            <section id="about">
+                <h2>About Us</h2>
                 <p>
-                    Predicting seizures before they occur is one of the most ambitious challenges in epilepsy research — and we’re actively
-                    investigating how artificial intelligence can help address it. By analyzing intracranial EEG signals, our researchers,
-                    John and Sarah, are training machine learning models aimed at identifying subtle neural patterns that may precede a
-                    seizure. Leveraging time-frequency representations and deep learning architectures, they are working toward estimating
-                    seizure likelihood minutes in advance. While still in development, this research is laying the groundwork for predictive
-                    tools that could eventually provide patients with earlier warnings and greater control over their condition.
+                    <a
+                        href="https://my.clevelandclinic.org/health/diseases/17636-epilepsy"
+                        style="color: black"
+                        ><strong>Epilepsy</strong></a
+                    >
+                    — it’s something most people have heard of, but few truly
+                    understand. Unlike brain-bending topics like quantum
+                    mechanics or the federal tax code, epilepsy is intensely
+                    real and surprisingly common: over
+                    <a
+                        href="https://my.clevelandclinic.org/health/diseases/17636-epilepsy#what-is-epilepsy"
+                        style="color: black"
+                        ><strong>3.4 million people in the U.S.</strong></a
+                    >
+                    live with it. That’s roughly
+                    <strong>1 in 100 Americans</strong> who will experience it
+                    in their lifetime.
+                </p>
+                <p>
+                    <strong>Spike Lab</strong> is a multidisciplinary team of
+                    researchers and engineers based at the
+                    <a
+                        href="https://my.clevelandclinic.org/departments/neurological/depts/epilepsy"
+                        style="color: black"
+                        ><strong>Cleveland Clinic Epilepsy Center</strong></a
+                    >. From signal processing and computational modeling to AI
+                    and machine learning (fueled by coffee and GPUs), we build
+                    tools to decode neurological activity, analyze epileptic
+                    seizure, and simulate the brain’s complex dynamics. By
+                    combining deep clinical insight with engineering innovation,
+                    we’re designing practical, human-centered solutions for one
+                    of medicine’s most complex neurological disorders.
+                </p>
+            </section>
+
+            <section id="research">
+                <h2>Our Research</h2>
+                <div class="entry">
+                    <h3 class="entry-title">AI-Based Seizure Prediction</h3>
+                    <p>
+                        Predicting seizures before they occur is one of the most
+                        ambitious challenges in epilepsy research — and we’re
+                        actively investigating how artificial intelligence can
+                        help address it. By analyzing intracranial EEG signals,
+                        our researchers, John and Sarah, are training machine
+                        learning models aimed at identifying subtle neural
+                        patterns that may precede a seizure. Leveraging
+                        time-frequency representations and deep learning
+                        architectures, they are working toward estimating
+                        seizure likelihood minutes in advance. While still in
+                        development, this research is laying the groundwork for
+                        predictive tools that could eventually provide patients
+                        with earlier warnings and greater control over their
+                        condition.
+                    </p>
+                </div>
+            </section>
+
+            <section id="publications">
+                <h2>Highlighted Publications</h2>
+                <div class="entry">
+                    <h3 class="entry-title">
+                        <a
+                            href="https://my.clevelandclinic.org/departments/neurological/depts/epilepsy"
+                            style="color: black"
+                            >AI-Based Seizure Prediction (Doe, et al., 2025)</a
+                        >
+                    </h3>
+                    <p>
+                        This study presents a machine learning framework for
+                        forecasting epileptic seizures using intracranial EEG
+                        (iEEG) recordings. By extracting time-frequency features
+                        from multi-channel iEEG data, the researchers trained
+                        deep neural networks to distinguish pre-ictal (before
+                        seizure) states from interictal (non-seizure) activity.
+                        The model was evaluated on real patient data and
+                        demonstrated promising early warning capabilities,
+                        offering seizure risk predictions several minutes in
+                        advance. The work highlights the potential of AI-driven
+                        tools to support personalized seizure forecasting and
+                        improve quality of life for individuals with
+                        drug-resistant epilepsy.
+                    </p>
+                </div>
+            </section>
+
+            <section id="team">
+                <h2>Our Team</h2>
+                <div class="team-group">
+                    <h3 class="team-role">Principal Investigator</h3>
+                    <p class="team-member">Balu Krishnan, Ph.D</p>
+                </div>
+                <div class="team-group">
+                    <h3 class="team-role">Postdoctoral Researchers</h3>
+                    <p class="team-member"></p>
+                </div>
+                <div class="team-group">
+                    <h3 class="team-role">Graduate Students</h3>
+                    <p class="team-member"></p>
+                </div>
+                <div class="team-group">
+                    <h3 class="team-role">Undergraduate Students</h3>
+                    <p class="team-member"></p>
+                </div>
+                <div class="team-group">
+                    <h3 class="team-role">Staff</h3>
+                    <p class="team-member"></p>
+                </div>
+                <div class="team-group">
+                    <h3 class="team-role">Lab Alumni</h3>
+                    <p class="team-member"></p>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <p>
+                    Have questions about our research, potential collaborations,
+                    or just curious about what we’re up to? We’d love to hear
+                    from you. Whether you’re a fellow researcher, a student, or
+                    just took a wrong turn on the internet — don’t hesitate to
+                    reach out to our Principal Investigator,
+                    <a
+                        href="mailto:epilepsy.lab@clevelandclinic.org"
+                        style="color: black"
+                        ><strong>Dr. Balu Krishnan</strong></a
+                    >
+                    — we’re always excited to connect!
+                </p>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-left">
+                <p>
+                    &copy; <span id="year"></span> Spike Lab. All rights
+                    reserved.
                 </p>
             </div>
-        </section>
-
-        <section id="publications">
-            <h2>Highlighted Publications</h2>
-            <div class="entry">
-                <h3 class="entry-title"><a href="https://my.clevelandclinic.org/departments/neurological/depts/epilepsy"
-                        style="color: black;">AI-Based Seizure Prediction (Doe, et al., 2025)</a>
-                </h3>
+            <div class="footer-right">
                 <p>
-                    This study presents a machine learning framework for forecasting epileptic seizures using intracranial EEG (iEEG)
-                    recordings. By extracting time-frequency features from multi-channel iEEG data, the researchers trained deep neural
-                    networks to distinguish pre-ictal (before seizure) states from interictal (non-seizure) activity. The model was
-                    evaluated on real patient data and demonstrated promising early warning capabilities, offering seizure risk predictions
-                    several minutes in advance. The work highlights the potential of AI-driven tools to support personalized seizure
-                    forecasting and improve quality of life for individuals with drug-resistant epilepsy.
+                    Seizure animation is AI-generated; no real patient data was
+                    used.
                 </p>
             </div>
-        </section>
+        </footer>
 
-        <section id="team">
-            <h2>Our Team</h2>
-            <div class="team-group">
-                <h3 class="team-role">Principal Investigator</h3>
-                <p class="team-member">Balu Krishnan, Ph.D</p>
-            </div>
-            <div class="team-group">
-                <h3 class="team-role">Postdoctoral Researchers</h3>
-                <p class="team-member"></p>
-            </div>
-            <div class="team-group">
-                <h3 class="team-role">Graduate Students</h3>
-                <p class="team-member"></p>
-            </div>
-            <div class="team-group">
-                <h3 class="team-role">Undergraduate Students</h3>
-                <p class="team-member"></p>
-            </div>
-            <div class="team-group">
-                <h3 class="team-role">Staff</h3>
-                <p class="team-member"></p>
-            </div>
-            <div class="team-group">
-                <h3 class="team-role">Lab Alumni</h3>
-                <p class="team-member"></p>
-            </div>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>
-                Have questions about our research, potential collaborations, or just curious about what we’re up to?
-                We’d love to hear from you. Whether you’re a fellow researcher, a student, or just took a wrong turn on
-                the internet — don’t hesitate to reach out to our Principal Investigator, <a
-                    href="mailto:epilepsy.lab@clevelandclinic.org" style="color: black;"><strong>Dr. Balu
-                        Krishnan</strong></a> — we’re always excited to connect!
-            </p>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-left">
-            <p>&copy; <span id="year"></span> Spike Lab. All rights reserved.</p>
-        </div>
-        <div class="footer-right">
-            <p>Seizure animation is AI-generated; no real patient data was used.</p>
-        </div>
-    </footer>
-
-    <script src="js/main.js"></script>
-
-</body>
-
+        <script src="js/main.js"></script>
+    </body>
 </html>
