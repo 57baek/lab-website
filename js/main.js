@@ -5,20 +5,19 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-let lastScrollTop = 0;
 const header = document.querySelector(".header");
+let lastScrollTop = 0;
 
 window.addEventListener("scroll", () => {
-    const currentScroll =
-        window.pageYOffset || document.documentElement.scrollTop;
+    const currentScroll = window.pageYOffset;
 
-    if (currentScroll > lastScrollTop) {
-        // scrolling down
+    const isHovering = header.matches(":hover");
+
+    if (currentScroll > lastScrollTop && !isHovering) {
         header.classList.add("hide");
     } else {
-        // scrolling up
         header.classList.remove("hide");
     }
 
-    lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    lastScrollTop = currentScroll;
 });
